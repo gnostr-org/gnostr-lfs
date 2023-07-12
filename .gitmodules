@@ -1,3 +1,4 @@
 [submodule "JS-Min"]
 	path = JS-Min
 	url = git@github.com:gnostr-org/JS-Min.git
+	dirty = ignore
