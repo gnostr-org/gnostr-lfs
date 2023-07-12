@@ -16,3 +16,5 @@ package-lock.json
 search/tweets/bitcoin
 search/tweets/nostr
 yarn.lock
+
+**.gch
