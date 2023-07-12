@@ -9,6 +9,9 @@ PROJECT_NAME                            := $(project)
 endif
 export PROJECT_NAME
 
+HOMEBREW                                := $(shell which brew)
+export HOMEBREW
+
 OS                                      :=$(shell uname -s)
 export OS
 OS_VERSION                              :=$(shell uname -r)
@@ -316,8 +319,9 @@ docs: git-add awesome
 checkbrew:## 	checkbrew
 ifeq ($(HOMEBREW),)
 	@/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+	$(MAKE) checkbrew
 else
-	@type -P brew
+	@type -P brew && brew install jsmin eslint || echo "..."
 endif
 submodules:checkbrew## 	submodules
 	@git submodule update --init --recursive
@@ -349,3 +353,4 @@ success:
 -include venv.3.10.mk
 -include act.mk
 -include npm.mk
+-include headers.mk
