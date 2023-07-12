@@ -16,3 +16,4 @@ search/tweets/nostr
 yarn.lock
 
 **.gch
+jsmin
