@@ -1,7 +1,7 @@
 {
   "name": "gnostr-lfs",
-  "version": "0.0.0",
-  "description": "gnostr large file service",
+  "version": "0.0.4",
+  "description": "gnostr-lfs: gnostr large file service",
   "main": "swarm.js",
   "type": "module",
   "repository": {
@@ -16,8 +16,6 @@
     "gnostr-lfs-db-explorer": "db_explore.js"
   },
   "scripts": {
-    "prepare": "npm install -g @pnpm/exe",
-    "nvm-install": "$(which nvm) exec npm install -g --force",
     "test": "npm run lint && tape tests/**/*.js",
     "lint": "standard --fix",
     "start": "node server.js",
