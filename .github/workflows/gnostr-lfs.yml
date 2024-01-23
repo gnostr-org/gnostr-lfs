@@ -1,4 +1,4 @@
-name: gnostr-docker
+name: gnostr-lfs
 
 on:
   schedule:
