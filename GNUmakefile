@@ -186,17 +186,17 @@ env:
 	@echo RELAYS=$(RELAYS)                              >>.env
 .PHONY:pnpm
 pnpm:
-	@type -P npm >/tmp/gnostr-lfs.log && npm i --silent --global @pnpm/exe  2>/tmp/gnostr-lfs.log || echo
-	@type -P npm >/tmp/gnostr-lfs.log && npm i --silent --global            2>/tmp/gnostr-lfs.log || echo
-	@type -P npm >/tmp/gnostr-lfs.log && npm i --silent --global yarn       2>/tmp/gnostr-lfs.log || echo
-	@type -P npm >/tmp/gnostr-lfs.log && npm i --silent --global fastify    2>/tmp/gnostr-lfs.log || echo
-	@type -P npm >/tmp/gnostr-lfs.log && npm i --silent --global eslint     2>/tmp/gnostr-lfs.log || echo
+	@type -P npm >/tmp/gnostr-lfs.log && npm i --no-progress --silent --global @pnpm/exe  >/tmp/gnostr-lfs.log || echo
+	@type -P npm >/tmp/gnostr-lfs.log && npm i --no-progress --silent --global            >/tmp/gnostr-lfs.log || echo
+	@type -P npm >/tmp/gnostr-lfs.log && npm i --no-progress --silent --global yarn       >/tmp/gnostr-lfs.log || echo
+	@type -P npm >/tmp/gnostr-lfs.log && npm i --no-progress --silent --global fastify    >/tmp/gnostr-lfs.log || echo
+	@type -P npm >/tmp/gnostr-lfs.log && npm i --no-progress --silent --global eslint     >/tmp/gnostr-lfs.log || echo
 #@pnpm install reflect-metadata
 #@pnpm install pino-pretty
 start:run
 run:env pnpm nvm## 	gnostr-proxy
-	@npm install
-	@npm install -g @pnpm/exe
+	npm install
+	[[ -x "$(shell which pnpm)" ]] || npm install -g @pnpm/exe >/tmp/gnostr-lfs.log || true
 	@npm --silent run start
 #@pnpm --silence install >/tmp/gnostr-lfs.log && pnpm --silence run start >/tmp/gnostr-lfs.log#&
 lynx-dump:
@@ -253,14 +253,14 @@ ifneq ($(shell id -u),0)
 	@echo cd $(TARGET_DIR)
 	sudo -s
 endif
-push: remove touch-time touch-block-time git-add 	
+push: remove touch-time touch-block-time git-add
 	@echo push
 	git push --set-upstream origin master || echo
 	bash -c "git commit --allow-empty -m '$(TIME)'"
 	bash -c "git push -f $(GIT_REPO_ORIGIN)	+$(GIT_BRANCH):$(GIT_BRANCH)"
 .PHONY: branch
 .ONESHELL:
-branch: remove git-add docs touch-time touch-block-time 	
+branch: remove git-add docs touch-time touch-block-time
 	@echo branch
 
 	git add --ignore-errors GNUmakefile TIME GLOBAL .github *.sh *.yml
@@ -270,30 +270,30 @@ branch: remove git-add docs touch-time touch-block-time
 	git push -f origin $(TIME)
 .PHONY: time-branch
 .ONESHELL:
-time-branch: remove git-add docs touch-time touch-block-time 	
+time-branch: remove git-add docs touch-time touch-block-time
 	@echo time-branch
 	bash -c "git commit -m 'make time-branch by $(GIT_USER_NAME) on time-$(TIME)'"
 		git branch time-$(TIME)
 		git push -f origin time-$(TIME)
 .PHONY: trigger
-trigger: remove git-add touch-block-time touch-time touch-global 	
+trigger: remove git-add touch-block-time touch-time touch-global
 
 .PHONY: touch-time
 .ONESHELL:
-touch-time: remove git-add touch-block-time 	
+touch-time: remove git-add touch-block-time
 	@echo touch-time
 	# echo $(TIME) $(shell git rev-parse HEAD) > TIME
 	echo $(TIME) > TIME
 
 .PHONY: touch-global
 .ONESHELL:
-touch-global: remove git-add touch-block-time 	
+touch-global: remove git-add touch-block-time
 	@echo touch-global
 	echo $(TIME) $(shell git rev-parse HEAD) > GLOBAL
 
 .PHONY: touch-block-time
 .ONESHELL:
-touch-block-time: remove git-add 	
+touch-block-time: remove git-add
 	@echo touch-block-time
 	@echo $(PYTHON3)
 	#$(PYTHON3) ./touch-block-time.py
@@ -305,7 +305,7 @@ touch-block-time: remove git-add
 		git branch $(BLOCK_TIME)
 		#git push -f origin $(BLOCK_TIME)
 .PHONY: docs
-docs: git-add awesome 	
+docs: git-add awesome
 	#@echo docs
 	bash -c 'if pgrep MacDown; then pkill MacDown; fi'
 	bash -c 'cat $(PWD)/sources/HEADER.md                >  $(PWD)/README.md'
@@ -367,7 +367,7 @@ success:
 .PHONY: nvm
 .ONESHELL:
 nvm: ## 	nvm
-	@curl -s -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash >/tmp/gnostr-lfs.log || git pull --quiet -C $(HOME)/.nvm && export NVM_DIR="$(HOME)/.nvm" 2>/tmp/gnostr-lfs.log && [ -s "$(NVM_DIR)/nvm.sh" ] && \. "$(NVM_DIR)/nvm.sh" 2>/tmp/gnostr-lfs.log  && [ -s "$(NVM_DIR)/bash_completion" ] && \. "$(NVM_DIR)/bash_completion"  && nvm install $(NODE_VERSION)  >/tmp/gnostr-lfs.log && nvm use $(NODE_VERSION) >/tmp/gnostr-lfs.log 
+	@curl -s -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash >/tmp/gnostr-lfs.log || git pull --quiet -C $(HOME)/.nvm && export NVM_DIR="$(HOME)/.nvm" >/tmp/gnostr-lfs.log && [ -s "$(NVM_DIR)/nvm.sh" ] && \. "$(NVM_DIR)/nvm.sh" >/tmp/gnostr-lfs.log && [ -s "$(NVM_DIR)/bash_completion" ] && \. "$(NVM_DIR)/bash_completion" && nvm install --no-progress -b $(NODE_VERSION) >/tmp/gnostr-lfs.log && nvm use --no-progress --silent $(NODE_VERSION) >/tmp/gnostr-lfs.log
 	@source ~/.bashrc && nvm alias $(NODE_ALIAS) $(NODE_VERSION) &
 
 nvm-clean: ## 	nvm-clean
