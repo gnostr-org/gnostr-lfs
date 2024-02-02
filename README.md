@@ -1,3 +1,9 @@
+```
+$ gnostr-query -i 64301469f8104bbc06cbd4c3992b38862f9be20c8238afbf3cac72b962ce6e35 | gnostr-cat wss://nos.lol
+
+```
+
+
 # Hyper-Nostr Relay
 ## Support me!
 - Sats: https://getalby.com/p/v_142857
@@ -48,10 +54,10 @@ const sdk = SDK.create({
 })
 goodbye(_ => sdk.close())
 
-const { 
+const {
     subscriptions, // a Map<subscriptionId: string, { filters: Filter[], socket: WebSocket, receivedEvents: Set<id: Number> }> object
     sendEvent, // (event: Event) => document: Object | Error | void; to send an Nostr Event to the peers and the local database.
-    queryEvents, // (filters: Filter[]) => Promise<Event[]>; to query the database for the events that match the list of filters 
+    queryEvents, // (filters: Filter[]) => Promise<Event[]>; to query the database for the events that match the list of filters
     sendQueryToSubscription, // (sub: Subscription, key: subscriptionId, opts: { hasLimit: Boolean }) => Promise<void> // Write the events to the socket; internally includes each id on receivedEvents and dont send duplicated events
     update // () => Promise<void>; manually sync the databases in the background
 } = await createSwarm(sdk, theTopic)
