@@ -1,11 +1,83 @@
-wss://{RELAY}/{REPO}/0000028d3b40689b18c3daac03041e4d477c36a5/HEAD@{0}:commit:5e08e6bece5ae01819262fe79b9d6da1b871048a/2059/828615/785983/02/0000c554 more gnostr protocol examples due to plagarism
-wss://{RELAY}/{REPO}/00000db0c02140c7ebd6a76316ce1b8b8e2913bf/HEAD@{1}:commit:b6c48e77a4e121516e328a6a46b66513562220f2/2059/828615/785883/01/00036eaa hyper-nostr
-wss://{RELAY}/{REPO}/26302fc9a38108a5fb22eb6686aabf800cc86baa/HEAD@{2}:commit:.gnostr/reflog:
-wss://{RELAY}/{REPO}/00000cc538783ee8d6b185ccdf944ae58fd8bcd7/HEAD@{3}:commit:96c200096de3bdbc81a6ae961d0a561145a616f9/2059/828615/785755/03/00028112 hyper-nostr
-wss://{RELAY}/{REPO}/0000003a2f6532dce525c67f3e03e388f1d863bc/HEAD@{4}:commit:48435ca5c3c2d9e3a48f19c562bc101abfc9e15e/2059/828615/785680/02/0004e340 hyper-nostr
-wss://{RELAY}/{REPO}/00000afcf609954c297c4c6a58ab03043d82bb7f/HEAD@{5}:commit:e31d40d5168052c3478b0d4b4b10057a32118d7b/2059/828615/785579/01/0001e66d hyper-nostr
-wss://{RELAY}/{REPO}/000008f22c5b5ad18baea007159f68ad66cfe41c/HEAD@{6}:commit:3e53d749b91f9008b4f7fe11fef1fc3bb981dd89/2059/828614/787429/01/00010f98 hyper-nostr
-wss://{RELAY}/{REPO}/374baf1c763d9554cd3dea63cc414e2cd85f3a51/HEAD@{7}:commit:make: act-all: ubuntu-node
-wss://{RELAY}/{REPO}/374baf1c763d9554cd3dea63cc414e2cd85f3a51/HEAD@{8}:commit:make: act-all: ubuntu-node
-wss://{RELAY}/{REPO}/374baf1c763d9554cd3dea63cc414e2cd85f3a51/HEAD@{9}:commit:make: act-all: ubuntu-node
-wss://{RELAY}/{REPO}/374baf1c763d9554cd3dea63cc414e2cd85f3a51/HEAD@{10}:commit:make: act-all: ubuntu-node
+wss://{RELAY}/{REPO}/000009fe7259cbcfc5a9b85cf2c9bb38bc5cfbe0/HEAD@{0}:commit:4ba37c491e87b7066b4ebfdc4cff7ed306ffefe3/2059/828633/755697/03/0006fe6a gnostr/reflog:part of gnostr protocol
+wss://{RELAY}/{REPO}/908f25786192daf78f9aa14637a1b74ef5780505/HEAD@{1}:commit:Merge pull request #2 from gnostr-org/1706906361/7d9d3d2/ac5de8b-rebase-hyper-nostr
+wss://{RELAY}/{REPO}/ac5de8b633beb5984be70efe2905ff54d6b0b871/HEAD@{2}:commit:.github/workflows/ubuntu-node.yml -> .github/workflows/gnostr-lfs.yml
+wss://{RELAY}/{REPO}/00000946340b29a0ffcadcf2d3b900683813415a/HEAD@{3}:commit:f943449860847cf849b052c9e0f3df691ad78a01/2059/828630/761648/00/00001150 gnostr-snapshot:part of gnostr protocol
+wss://{RELAY}/{REPO}/00000946340b29a0ffcadcf2d3b900683813415a/HEAD@{4}:commit:f943449860847cf849b052c9e0f3df691ad78a01/2059/828630/761648/00/00001150 gnostr-snapshot:part of gnostr protocol
+wss://{RELAY}/{REPO}/3130d33e44b641ea4f0d03ebc5bd8273ffb3766d/HEAD@{5}:commit:GNUmakefile:quieter
+wss://{RELAY}/{REPO}/3130d33e44b641ea4f0d03ebc5bd8273ffb3766d/HEAD@{6}:commit:GNUmakefile:quieter
+wss://{RELAY}/{REPO}/e5f898fd4e2a51f3095b5525ac3339cc2d726569/HEAD@{7}:commit:README.md:
+wss://{RELAY}/{REPO}/1dae8ebb9443a7096d726e64941877c8e830680d/HEAD@{8}:commit:.gnostr/reflog:more gnostr protocol examples due to plagarism
+wss://{RELAY}/{REPO}/46e21f357b715ed0285af8a855c17acd58599391/HEAD@{9}:commit:5e08e6bece5ae01819262fe79b9d6da1b871048a/2059/828615/785983/02/0000c554 more gnostr protocol examples due to plagarism
+wss://{RELAY}/{REPO}/88d1a52a592f001321750efd192ad599f19f881f/HEAD@{10}:commit:b6c48e77a4e121516e328a6a46b66513562220f2/2059/828615/785883/01/00036eaa hyper-nostr
+wss://{RELAY}/{REPO}/4ddc26d10d3e5b7067d4af6ff04f1a09a6bc7817/HEAD@{11}:commit:.gnostr/reflog:
+wss://{RELAY}/{REPO}/2195907297432e4afaaa99233887d60da67377ed/HEAD@{12}:commit:96c200096de3bdbc81a6ae961d0a561145a616f9/2059/828615/785755/03/00028112 hyper-nostr
+wss://{RELAY}/{REPO}/432f740d5768763ba3b9f5d37fc83d9e96b39240/HEAD@{13}:commit:48435ca5c3c2d9e3a48f19c562bc101abfc9e15e/2059/828615/785680/02/0004e340 hyper-nostr
+wss://{RELAY}/{REPO}/db515c45c59e3159ea40a71625a363a7e91b7644/HEAD@{14}:commit:e31d40d5168052c3478b0d4b4b10057a32118d7b/2059/828615/785579/01/0001e66d hyper-nostr
+wss://{RELAY}/{REPO}/2691719baa5e65803f94931dd5d6358e2bf8c1a1/HEAD@{15}:commit:3e53d749b91f9008b4f7fe11fef1fc3bb981dd89/2059/828614/787429/01/00010f98 hyper-nostr
+wss://{RELAY}/{REPO}/ac5de8b633beb5984be70efe2905ff54d6b0b871/HEAD@{16}:commit:.github/workflows/ubuntu-node.yml -> .github/workflows/gnostr-lfs.yml
+wss://{RELAY}/{REPO}/3dc4079181f66567ef24b4da8ffbc98d73a06ce4/HEAD@{17}:commit:bee.js.h:db.js.h
+wss://{RELAY}/{REPO}/73d83b51f1d776263523b634b68e8b32eb96f3ed/HEAD@{18}:commit:.gnostr/reflog:more gnostr protocol examples due to plagarism
+wss://{RELAY}/{REPO}/84bf7d6efb74f8135ab22b9418a9ebba87c98fcb/HEAD@{19}:commit:5e08e6bece5ae01819262fe79b9d6da1b871048a/2059/828615/785983/02/0000c554 more gnostr protocol examples due to plagarism
+wss://{RELAY}/{REPO}/d31ce0ca913473bf283585b4f2c6185fd0a2fc77/HEAD@{20}:commit:b6c48e77a4e121516e328a6a46b66513562220f2/2059/828615/785883/01/00036eaa hyper-nostr
+wss://{RELAY}/{REPO}/8a61346d526b9a4b78924bc9b67ef1c44b9f6006/HEAD@{21}:commit:.gnostr/reflog:
+wss://{RELAY}/{REPO}/6d44e8eaefe6fa6f6e0b94208e18e1a5ae0427df/HEAD@{22}:commit:96c200096de3bdbc81a6ae961d0a561145a616f9/2059/828615/785755/03/00028112 hyper-nostr
+wss://{RELAY}/{REPO}/f692e2bfbde4c7c4d12385c971815a7990bd91a6/HEAD@{23}:commit:48435ca5c3c2d9e3a48f19c562bc101abfc9e15e/2059/828615/785680/02/0004e340 hyper-nostr
+wss://{RELAY}/{REPO}/88b8df30853594dec2aebf36b9223dd942a91516/HEAD@{24}:commit:e31d40d5168052c3478b0d4b4b10057a32118d7b/2059/828615/785579/01/0001e66d hyper-nostr
+wss://{RELAY}/{REPO}/5e3170fac69ec2078a2e1edebe0a5355ebf21b61/HEAD@{25}:commit:3e53d749b91f9008b4f7fe11fef1fc3bb981dd89/2059/828614/787429/01/00010f98 hyper-nostr
+wss://{RELAY}/{REPO}/ac5de8b633beb5984be70efe2905ff54d6b0b871/HEAD@{26}:commit:.github/workflows/ubuntu-node.yml -> .github/workflows/gnostr-lfs.yml
+wss://{RELAY}/{REPO}/3dc4079181f66567ef24b4da8ffbc98d73a06ce4/HEAD@{27}:commit:bee.js.h:db.js.h
+wss://{RELAY}/{REPO}/3dc4079181f66567ef24b4da8ffbc98d73a06ce4/HEAD@{28}:commit:bee.js.h:db.js.h
+wss://{RELAY}/{REPO}/ce73415cabc9b6b1d8177f5c553ff1059be16da8/HEAD@{29}:commit:headers.mk
+wss://{RELAY}/{REPO}/87ac25022043cadefeb960d4e17e87c0105b5141/HEAD@{30}:commit:npm.mk:npm-install
+wss://{RELAY}/{REPO}/6520579a2f22bcbf24c2ed2b895848b6e7e7ada4/HEAD@{31}:commit:install-nvm.sh
+wss://{RELAY}/{REPO}/3e8535427dc602daa5139bfc54794a44d2142a34/HEAD@{32}:commit:package.json:pnpm-lock.yaml
+wss://{RELAY}/{REPO}/d6db34a91530a04ab9a27b94002005d72f64df2b/HEAD@{33}:commit:WEEBLE:WOBBLE.txt:removed
+wss://{RELAY}/{REPO}/b4c7c9ab81cddee8ce52bf43a20ac810110b7c96/HEAD@{34}:commit:WEEBLE_WOBBLE.txt:
+wss://{RELAY}/{REPO}/74ecb74045d77bf66a949f1d5dcbd12b5203e9a2/HEAD@{35}:commit:gnostr-lfs
+wss://{RELAY}/{REPO}/531f5e93b89f4526746e5902ee43b81e2912e6ad/HEAD@{36}:commit:nostr_events.js:remove
+wss://{RELAY}/{REPO}/ce429faa596fb10dbd5ceefa88788228db9e4364/HEAD@{37}:commit:commit:*.js
+wss://{RELAY}/{REPO}/03c58e1931736b94f1e4644b0b23f397dae7a396/HEAD@{38}:commit:.nvmrc:v16.20.1
+wss://{RELAY}/{REPO}/1b0f81df24e2da99ecef445d18d16ddb94c92c53/HEAD@{39}:commit:.gitignore
+wss://{RELAY}/{REPO}/e7cf9b4e037ccc2a8fca988c65a38334861d9672/HEAD@{40}:commit:GNUmakefile:quieter
+wss://{RELAY}/{REPO}/f6f19a1f1eebd5aff42cf6456d1c64b7b824d0de/HEAD@{41}:commit:.github/workflows/gnostr-lfs.yml
+wss://{RELAY}/{REPO}/a714b203d64c3f508ad2c6c3ce9131a3a7f5dbc5/HEAD@{42}:commit:README.md:
+wss://{RELAY}/{REPO}/dc90871559744377098d87e1ea184bcf22acd404/HEAD@{43}:commit:.github/workflows/ubuntu-node.yml -> .github/workflows/gnostr-lfs.yml
+wss://{RELAY}/{REPO}/dc90871559744377098d87e1ea184bcf22acd404/HEAD@{44}:commit:.github/workflows/ubuntu-node.yml -> .github/workflows/gnostr-lfs.yml
+wss://{RELAY}/{REPO}/1032a173318e0b1806e0251b7b9c9fa623ef2b59/HEAD@{45}:commit:.github/workflows/ubuntu-node.yml
+wss://{RELAY}/{REPO}/8b178cd8e10f17522096952afa626715066df570/HEAD@{46}:commit:node_modules:remove
+wss://{RELAY}/{REPO}/bd1de4b9314691f08376aff647e0f6b6b6245e78/HEAD@{47}:commit:node_modules:remove
+wss://{RELAY}/{REPO}/738cda87a711fb0d6ffa31e3b81687ecdbbc7803/HEAD@{48}:commit:make: run: npm install -g @pnpm/exe
+wss://{RELAY}/{REPO}/8170df7ad06bb60598babeca8816fa1466236707/HEAD@{49}:commit:make: run: pnpm install ... fastify eslint
+wss://{RELAY}/{REPO}/dea9a4519a8765ae4e5bdbeef956c0d69cb38643/HEAD@{50}:commit:pnpm-lock.yaml: node_modules/autobase: node_modules/hyperdeebee
+wss://{RELAY}/{REPO}/a003db544e9e28c69de10668b7fc3f2cb55e6d2e/HEAD@{51}:commit:.gitignore:GNUmakefile:server.js:v0.0.8
+wss://{RELAY}/{REPO}/755348d722d8c6bb12812fa89fa641182bec1721/HEAD@{52}:commit:package.json:gnostr-lfs:v0.0.7
+wss://{RELAY}/{REPO}/c660b3dca93ad08fdbac8255f0d724c644ae8b33/HEAD@{53}:commit:package.json:gnostr-lfs:v0.0.5
+wss://{RELAY}/{REPO}/4c0f48ac15eba42992fd227cc948a89dc4bc7257/HEAD@{54}:commit:npm.mk:package.json:make install gnostr-lfs
+wss://{RELAY}/{REPO}/546cadec944171573d7fbf6d2f38a857eaf0c329/HEAD@{55}:commit:make: headers - add header.mk
+wss://{RELAY}/{REPO}/09785942d75673280680d2b3cee4284970627326/HEAD@{56}:commit:server.js: add --tag "weeble" "gnostr-weeble" ...
+wss://{RELAY}/{REPO}/c7ebc18165ef483d87e3959b227c19db6b93302e/HEAD@{57}:commit:.gitignore:.env
+wss://{RELAY}/{REPO}/acf1600798a2d743adf2c8bee1df87ea1b3f293b/HEAD@{58}:commit:gnostr-lfs: quiet - return EVENT body only
+wss://{RELAY}/{REPO}/125c2133fc1611248764ed541133273477548e63/HEAD@{59}:commit:make: run: return EVENT body only
+wss://{RELAY}/{REPO}/e25b4387ab1e8a7353cb18f01b413eba2a2c0140/HEAD@{60}:commit:package.json: start >/tmp/gnostr-lfs.log
+wss://{RELAY}/{REPO}/43e995a433dcb9ee02533c2e39d5846370be8968/HEAD@{61}:commit:server.js: quiet
+wss://{RELAY}/{REPO}/81cee7ac6c60178290eaabe9f3e8ec8329706e7c/HEAD@{62}:commit:package.json:  "start": "$(which node) --silent server.js",
+wss://{RELAY}/{REPO}/daaacd704aaba8ba007750d7a3fb9ce02c29f423/HEAD@{63}:commit:make: pnpm quiet
+wss://{RELAY}/{REPO}/53798a4a4c026fa23a2d287462bff0af3c6c9916/HEAD@{64}:commit:server.js: return EVENT body only
+wss://{RELAY}/{REPO}/7377740543f609d56b608fc43272fa7b8eaef2a3/HEAD@{65}:commit:make:run: pnpm run start
+wss://{RELAY}/{REPO}/b65eaff95fa342c745a92b23098da2fa54d75b21/HEAD@{66}:commit:gnostr-lfs: git reset --hard && git config pull.rebase true
+wss://{RELAY}/{REPO}/6b67925bc4c391242a44f2f3745dbb22abcf006e/HEAD@{67}:commit:pnpm:nvm: remove ace command
+wss://{RELAY}/{REPO}/8672e90c6077f397f5233b564fb285d10e825fcf/HEAD@{68}:commit:package.json:
+wss://{RELAY}/{REPO}/ccf93e2b7b8552cf04482898f117cc9d21bfa2f1/HEAD@{69}:commit:GNUmakefile: add #endif
+wss://{RELAY}/{REPO}/c8e3711de5552ceced6cf979a28b0c5445b97ad4/HEAD@{70}:commit:WEEBLE:WOBBLE.txt -> WEEBLE_WOBBLE.txt
+wss://{RELAY}/{REPO}/ad9c16ac42fc14ef7682c956e2bcbf7a4c59b7be/HEAD@{71}:commit:make: checkbrew remove eslint
+wss://{RELAY}/{REPO}/29c7e333414e19641eede52772acfced64411390/HEAD@{72}:commit:make: headers - add header.mk
+wss://{RELAY}/{REPO}/e8563c854244fa152132692758b1ad607009d879/HEAD@{73}:commit:bee.js.h:
+wss://{RELAY}/{REPO}/4a01ab5ce9dbb735e53cf7c4b3c3fb2ba51310a6/HEAD@{74}:commit:server.js.h:
+wss://{RELAY}/{REPO}/b9f65c4dc97f8304965e14783fde0093ff763605/HEAD@{75}:commit:.gitignore: node_modules/.bin .pnpm/*/.bin
+wss://{RELAY}/{REPO}/efbf727ed7e3b6b78262a393a42de5a3fa788c67/HEAD@{76}:commit:gnostr-lfs: initial config
+wss://{RELAY}/{REPO}/a714b203d64c3f508ad2c6c3ce9131a3a7f5dbc5/HEAD@{77}:commit:README.md:
+wss://{RELAY}/{REPO}/ac5de8b633beb5984be70efe2905ff54d6b0b871/HEAD@{78}:commit:.github/workflows/ubuntu-node.yml -> .github/workflows/gnostr-lfs.yml
+wss://{RELAY}/{REPO}/ac5de8b633beb5984be70efe2905ff54d6b0b871/HEAD@{79}:commit:.github/workflows/ubuntu-node.yml -> .github/workflows/gnostr-lfs.yml
+wss://{RELAY}/{REPO}/ac5de8b633beb5984be70efe2905ff54d6b0b871/HEAD@{80}:commit:.github/workflows/ubuntu-node.yml -> .github/workflows/gnostr-lfs.yml
+wss://{RELAY}/{REPO}/ac5de8b633beb5984be70efe2905ff54d6b0b871/HEAD@{81}:commit:.github/workflows/ubuntu-node.yml -> .github/workflows/gnostr-lfs.yml
+wss://{RELAY}/{REPO}/1f9c6959dae2bf8f4c21cae17a976b3727d0049a/HEAD@{82}:commit:make: run: npm install -g @pnpm/exe
