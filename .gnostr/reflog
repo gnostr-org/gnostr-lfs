@@ -1,8 +1,10 @@
-wss://{RELAY}/{REPO}/00000cc538783ee8d6b185ccdf944ae58fd8bcd7/HEAD@{0}:commit:96c200096de3bdbc81a6ae961d0a561145a616f9/2059/828615/785755/03/00028112 hyper-nostr
-wss://{RELAY}/{REPO}/0000003a2f6532dce525c67f3e03e388f1d863bc/HEAD@{1}:commit:48435ca5c3c2d9e3a48f19c562bc101abfc9e15e/2059/828615/785680/02/0004e340 hyper-nostr
-wss://{RELAY}/{REPO}/00000afcf609954c297c4c6a58ab03043d82bb7f/HEAD@{2}:commit:e31d40d5168052c3478b0d4b4b10057a32118d7b/2059/828615/785579/01/0001e66d hyper-nostr
-wss://{RELAY}/{REPO}/000008f22c5b5ad18baea007159f68ad66cfe41c/HEAD@{3}:commit:3e53d749b91f9008b4f7fe11fef1fc3bb981dd89/2059/828614/787429/01/00010f98 hyper-nostr
-wss://{RELAY}/{REPO}/374baf1c763d9554cd3dea63cc414e2cd85f3a51/HEAD@{4}:commit:make: act-all: ubuntu-node
-wss://{RELAY}/{REPO}/374baf1c763d9554cd3dea63cc414e2cd85f3a51/HEAD@{5}:commit:make: act-all: ubuntu-node
+wss://{RELAY}/{REPO}/00000db0c02140c7ebd6a76316ce1b8b8e2913bf/HEAD@{0}:commit:b6c48e77a4e121516e328a6a46b66513562220f2/2059/828615/785883/01/00036eaa hyper-nostr
+wss://{RELAY}/{REPO}/26302fc9a38108a5fb22eb6686aabf800cc86baa/HEAD@{1}:commit:.gnostr/reflog:
+wss://{RELAY}/{REPO}/00000cc538783ee8d6b185ccdf944ae58fd8bcd7/HEAD@{2}:commit:96c200096de3bdbc81a6ae961d0a561145a616f9/2059/828615/785755/03/00028112 hyper-nostr
+wss://{RELAY}/{REPO}/0000003a2f6532dce525c67f3e03e388f1d863bc/HEAD@{3}:commit:48435ca5c3c2d9e3a48f19c562bc101abfc9e15e/2059/828615/785680/02/0004e340 hyper-nostr
+wss://{RELAY}/{REPO}/00000afcf609954c297c4c6a58ab03043d82bb7f/HEAD@{4}:commit:e31d40d5168052c3478b0d4b4b10057a32118d7b/2059/828615/785579/01/0001e66d hyper-nostr
+wss://{RELAY}/{REPO}/000008f22c5b5ad18baea007159f68ad66cfe41c/HEAD@{5}:commit:3e53d749b91f9008b4f7fe11fef1fc3bb981dd89/2059/828614/787429/01/00010f98 hyper-nostr
 wss://{RELAY}/{REPO}/374baf1c763d9554cd3dea63cc414e2cd85f3a51/HEAD@{6}:commit:make: act-all: ubuntu-node
 wss://{RELAY}/{REPO}/374baf1c763d9554cd3dea63cc414e2cd85f3a51/HEAD@{7}:commit:make: act-all: ubuntu-node
+wss://{RELAY}/{REPO}/374baf1c763d9554cd3dea63cc414e2cd85f3a51/HEAD@{8}:commit:make: act-all: ubuntu-node
+wss://{RELAY}/{REPO}/374baf1c763d9554cd3dea63cc414e2cd85f3a51/HEAD@{9}:commit:make: act-all: ubuntu-node
