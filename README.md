@@ -1,4 +1,15 @@
+```
+$ gnostr-query -i 64301469f8104bbc06cbd4c3992b38862f9be20c8238afbf3cac72b962ce6e35 | gnostr-cat wss://nos.lol
 
+```
+
+
+# Hyper-Nostr Relay
+## Support me!
+- Sats: https://getalby.com/p/v_142857
+- Ko-fi: https://ko-fi.com/v142857
+## Join the community!
+- Discord server: https://discord.gg/SeebbwYqrg
 ## Usage
 The goal of this tool is to behave as a public relay; think of the chosen topic as a public relay, where you can send and receive notes from your peers!
 1. Install: `npm install -g hyper-nostr`
@@ -43,10 +54,10 @@ const sdk = SDK.create({
 })
 goodbye(_ => sdk.close())
 
-const { 
+const {
     subscriptions, // a Map<subscriptionId: string, { filters: Filter[], socket: WebSocket, receivedEvents: Set<id: Number> }> object
     sendEvent, // (event: Event) => document: Object | Error | void; to send an Nostr Event to the peers and the local database.
-    queryEvents, // (filters: Filter[]) => Promise<Event[]>; to query the database for the events that match the list of filters 
+    queryEvents, // (filters: Filter[]) => Promise<Event[]>; to query the database for the events that match the list of filters
     sendQueryToSubscription, // (sub: Subscription, key: subscriptionId, opts: { hasLimit: Boolean }) => Promise<void> // Write the events to the socket; internally includes each id on receivedEvents and dont send duplicated events
     update // () => Promise<void>; manually sync the databases in the background
 } = await createSwarm(sdk, theTopic)
@@ -75,19 +86,5 @@ The server sends the following events:
 - NOTICE: Reporting errors
     - Format: `["NOTICE", <message>]`
     - The only Notice this server implements is `"Unrecognized event"`, for when there is no match for the event kind sent.
-
---
-    
-# Upstream 
-
-## [Hyper-Nostr Relay](https://github.com/Ruulul/hyper-nostr.git)
-### Support me!
-- Sats: https://getalby.com/p/v_142857
-- Ko-fi: https://ko-fi.com/v142857
-### Join the community!
-- Discord server: https://discord.gg/SeebbwYqrg
-
-
-
 ## License
 MIT
