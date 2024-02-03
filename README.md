@@ -1,9 +1,9 @@
 ```
-$ gnostr-query -i 1424ee989bc7801d544c84d513b7700f897288973395ae32b270222ac1e73641 | gnostr-cat wss://nos.lol
+gnostr-query -i 1424ee989bc7801d544c84d513b7700f897288973395ae32b270222ac1e73641 | gnostr-cat wss://nos.lol
 
 ```
 ```
-$ gnostr-query -i 64301469f8104bbc06cbd4c3992b38862f9be20c8238afbf3cac72b962ce6e35 | gnostr-cat wss://nos.lol
+gnostr-query -i 64301469f8104bbc06cbd4c3992b38862f9be20c8238afbf3cac72b962ce6e35 | gnostr-cat wss://nos.lol
 
 ```
 
@@ -67,7 +67,9 @@ const {
 } = await createSwarm(sdk, theTopic)
 ```
 ## Server API
+
 The client can send the following events through the websocket:
+
 - REQ: Request and subscription event
     - Format: `["REQ", <subscription id>, <filters JSON>...]`
     - The server then adds the socket and the filters to the `subs` map
