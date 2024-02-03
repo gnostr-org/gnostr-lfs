@@ -8,15 +8,18 @@ import goodbye from './goodbye.js'
 import { validateEvent, getEventType } from './gnostr_events.js'
 import { default as fsWithCallbacks } from 'fs'
 
+import { homedir } from 'os'
+
 import child_process from 'child_process'
+const userHomeDir = homedir()
 const fs = fsWithCallbacks.promises
 // const fs = require('fs').promises;
 
 const port = process.argv[2] || 3000
-const startingTopics = process.argv.slice(3)
+const startingTopics = process.argv.slice(3) || gnostr
 
 const sdk = await SDK.create({
-  storage: '.gnostr/lfs',
+  storage: userHomeDir + '/.gnostr/lfs',
   autoJoin: true
 })
 
@@ -25,10 +28,24 @@ const sdk = await SDK.create({
 
 const content = '#gnostr'
 async function writekey () {
+  const write_exec = child_process.exec
+  write_exec("\
+  mkdir -p ~/.gnostr && mkdir -p ~/.gnostr/lfs && touch ~/.gnostr/lfs/KEYS || echo ''", (error, stdout, stderr) => {
+    if (error) {
+      console.log(`gnostr-lfs error: ${error.message}`)
+      return nil
+    }
+    if (stderr) {
+      console.log(`gnostr-lfs stderr: ${stderr}`)
+      return nil
+    }
+    // console.log(`gnostr-lfs stdout: ${stdout}`);// we silence so only the EVENT body is returned
+  })
   try {
-    //TODO: git config --add gnostr-lfs.pubkey
+    // TODO: git config --add gnostr-lfs.pubkey
+    // await fs.appendFile( userHomeDir + '/KEYS', sdk.privateKey.toString('hex'))
     await fs.appendFile('.gnostr/lfs/KEYS', sdk.publicKey.toString('hex'))
-    //console.log('your key is', sdk.publicKey.toString('hex'))// we silence to only return EVENT body
+    console.log('your key is', sdk.publicKey.toString('hex'))// we silence to only return EVENT body
   } catch (err) {
     console.log(err)
   }
@@ -47,7 +64,7 @@ exec("type -P gnostr || echo ''", (error, stdout, stderr) => {
     console.log(`gnostr-lfs stderr: ${stderr}`)
     return nil
   }
-  //console.log(`gnostr-lfs stdout: ${stdout}`);// we silence so only the EVENT body is returned
+  // console.log(`gnostr-lfs stdout: ${stdout}`);// we silence so only the EVENT body is returned
 })
 
 exec("which gnostr || echo 'gnostr not found!!! && 1'", (error, stdout, stderr) => {
@@ -71,7 +88,7 @@ exec(`gnostr --sec ${sdk.publicKey.toString('hex')} --tag "gnostr" "repo" --tag 
     console.log(`gnostr-lfs stderr: ${stderr}`)
     return
   }
-  console.log(`${stdout}`) //we silence so only EVENT body returned
+  console.log(`${stdout}`) // we silence so only EVENT body returned
 })
 
 goodbye(async _ => {
@@ -163,5 +180,5 @@ fi.register(async function (fastify) {
 
 fi.listen({ port, host: '0.0.0.0' }, err => {
   if (err) throw err
-  //console.log(`listening on ${port}`) //we silence so that only the EVENT body is returned
+  // console.log(`listening on ${port}`) //we silence so that only the EVENT body is returned
 })
