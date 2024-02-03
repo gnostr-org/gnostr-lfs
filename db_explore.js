@@ -5,12 +5,15 @@ import * as SDK from 'hyper-sdk'
 import goodbye from './goodbye.js'
 import { DB } from 'hyperdeebee'
 import { createInterface } from 'readline'
+
+import { homedir } from 'os'
 const int = createInterface(process.stdin, process.stdout)
 
 const prefix = 'gnostr-lfs-'
+const userHomeDir = homedir()
 
 const sdk = await SDK.create({
-  storage: '.gnostr/lfs',
+  storage: userHomeDir + '/.gnostr/lfs',
   autoJoin: true
 })
 goodbye(_ => sdk.close())
