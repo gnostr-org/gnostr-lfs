@@ -61,6 +61,50 @@ exec("which gnostr || echo 'gnostr not found!!! && 1'", (error, stdout, stderr) 
   }
   const gnostr = stdout
 })
+exec("which gnostr-weeble || echo 'gnostr-weeble not found!!! && 1'", (error, stdout, stderr) => {
+  if (error) {
+    console.log(`gnostr-lfs error: ${error.message}`)
+    return nil
+  }
+  if (stderr) {
+    console.log(`gnostr-lfs stderr: ${stderr}`)
+    return nil
+  }
+  const gnostr = stdout
+})
+exec("which gnostr-wobble || echo 'gnostr-wobble not found!!! && 1'", (error, stdout, stderr) => {
+  if (error) {
+    console.log(`gnostr-lfs error: ${error.message}`)
+    return nil
+  }
+  if (stderr) {
+    console.log(`gnostr-lfs stderr: ${stderr}`)
+    return nil
+  }
+  const gnostr = stdout
+})
+exec("which gnostr-blockheight || echo 'gnostr-blockheight not found!!! && 1'", (error, stdout, stderr) => {
+  if (error) {
+    console.log(`gnostr-lfs error: ${error.message}`)
+    return nil
+  }
+  if (stderr) {
+    console.log(`gnostr-lfs stderr: ${stderr}`)
+    return nil
+  }
+  const gnostr = stdout
+})
+exec("which gnostr-post-event || echo 'gnostr-post-event not found!!! && 1'", (error, stdout, stderr) => {
+  if (error) {
+    console.log(`gnostr-lfs error: ${error.message}`)
+    return nil
+  }
+  if (stderr) {
+    console.log(`gnostr-lfs stderr: ${stderr}`)
+    return nil
+  }
+  const gnostr = stdout
+})
 
 exec(`gnostr --sec ${sdk.publicKey.toString('hex')} -t gnostr -t gnostr-lfs --tag weeble "$(gnostr-weeble)" --tag wobble "$(gnostr-wobble)" --tag blockheight "$(gnostr-blockheight)" --tag publicKey ${sdk.publicKey.toString('hex')} --content "${content}" `, (error, stdout, stderr) => {
   if (error) {
